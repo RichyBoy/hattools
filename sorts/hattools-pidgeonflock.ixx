@@ -130,7 +130,7 @@ export namespace hattools::sorts::pidgeonflock {
     }
 
     // Add all the pidgeon holes together and stick the results in the very first slice  
-    for (int i = 1; i < threads; ++i) {
+    for (int i = 1; i < static_cast<int>(threads); ++i) {
       std::transform(thePieces[0].nve.begin(), thePieces[0].nve.end(), thePieces[i].nve.begin(), thePieces[0].nve.begin(), std::plus<int>());
       std::transform(thePieces[0].pve.begin(), thePieces[0].pve.end(), thePieces[i].pve.begin(), thePieces[0].pve.begin(), std::plus<int>());
     }  

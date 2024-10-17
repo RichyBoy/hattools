@@ -120,7 +120,7 @@ int main()
 {
   vector<string> files = { "sparse.csv", "equal.csv", "dense.csv" };
 
-  for(int i = 0; i < files.size(); ++i) {
+  for(unsigned int i = 0; i < files.size(); ++i) {
     ofstream p1{};
     p1.open(files[i]);
     p1 << "lowerBound,upperBound,elementCount,fill,elapsedPidgeon,elapsedPidgeon23,elapsedFlock,elapsedSTL,elapsedSTLPar,elapsedSTLParSeq\n";

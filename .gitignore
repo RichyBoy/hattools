@@ -436,3 +436,5 @@ FodyWeavers.xsd
 
 # Makefile g++
 gcm.cache/
+lib64/*
+bin/*
